@@ -257,11 +257,11 @@ python hello_server.py
 <br>
 
 
-### 🧪 4) 테스트
+### 🧪 4-1) 간단한 테스트 (Linux)
 
 1. [POST 요청] 저장:
 ```bash
-curl -X POST http://localhost:5000/save -H "Content-Type: application/json" -d "{"value": 42}"
+curl -X POST http://localhost:5000/save -H "Content-Type: application/json" -d "{"value": 30}"
 ```
 
 2. [GET 요청] 불러오기:
@@ -270,6 +270,49 @@ curl http://localhost:5000/load
 ```
 
 <br>
+
+### 🖥️ 4-2) Postman 으로 테스트 (Windows)
+
+
+**❗Postman 설치하기**
+
+```
+아래 링크에서 다운로드
+```
+
+[https://www.postman.com/downloads/](https://www.postman.com/downloads/)
+
+<br>
+
+**POST 요청 예시**
+
+```
+
+1. 상단에서 `POST` 선택
+2. 주소 입력: `http://localhost:5000/save`
+3. 아래 탭에서 **Body → raw → JSON** 선택
+4. 데이터 입력: { "value": "30" }
+5. "Send" 클릭 → 서버에 데이터 전송
+
+```
+
+
+<br>
+
+**GET 요청 예시**
+
+```
+1. Postman 실행
+2. 상단에서 `GET` 선택
+3. 주소 입력: `http://localhost:5000/load`
+4. "Send" 클릭
+5. 하단에 응답(JSON)이 표시됨
+```
+
+
+
+<br>
+
 
 ---
 
