@@ -288,9 +288,9 @@ curl http://localhost:5000/load
 
 ```
 
-1. 상단에서 `POST` 선택
-2. 주소 입력: `http://localhost:5000/save`
-3. 아래 탭에서 **Body → raw → JSON** 선택
+1. 상단에서 [POST] 선택
+2. 주소 입력: http://localhost:5000/save
+3. 아래 탭에서 Body → raw → JSON 선택
 4. 데이터 입력: { "value": "30" }
 5. "Send" 클릭 → 서버에 데이터 전송
 
@@ -303,8 +303,8 @@ curl http://localhost:5000/load
 
 ```
 1. Postman 실행
-2. 상단에서 `GET` 선택
-3. 주소 입력: `http://localhost:5000/load`
+2. 상단에서 [GET] 선택
+3. 주소 입력: http://localhost:5000/load
 4. "Send" 클릭
 5. 하단에 응답(JSON)이 표시됨
 ```
